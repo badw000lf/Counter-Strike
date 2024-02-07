@@ -20,3 +20,6 @@ STEAM INSTALL DIR/Steam/steamapps/common/Counter-Strike Source Dedicated Server/
 <br>
 <br>
 (You will need to create the cstrike folder in the custom folder, it will not be there by default)
+
+# After Install
+Set your Difficulty to Normal and play

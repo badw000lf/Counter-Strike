@@ -1,0 +1,1119 @@
+//----------------------------------------------------------------------------
+// BotProfile.db
+// Author: Michael S. Booth, Turtle Rock Studios (www.turtlerockstudios.com)
+//
+// This database defines bot "personalities". 
+// Feel free to edit it and define your own bots.
+//
+//
+// EDITS, PROFILES, SKILLS, and NAMES BY dDefinder '08
+//----------------------------------------------------------------------------
+//----------------------------------------------------------------------------
+// Tweaked for more of a realistic challenge by Badw000lf on Normal Difficulty
+//----------------------------------------------------------------------------
+//----------------------------------------------------------------------------
+//
+// All profiles begin with this data and overwrite their own
+//
+Default
+	Skill = 50
+	Aggression = 50
+	ReactionTime = 0.3
+	AttackDelay = 0
+	Teamwork = 100
+	WeaponPreference = none
+	Cost = 0
+	Difficulty = NORMAL
+	VoicePitch = 100
+	Skin = 0
+End
+
+//----------------------------------------------------------------------------
+
+//
+// These templates inherit from Default and override with their values
+// The name of the template defines a type that is used by individual bot profiles
+//
+
+// weapon preference templates
+
+Template Trueawpsniper
+	WeaponPreference = awp
+	WeaponPreference = ak47
+	WeaponPreference = m4a1
+	WeaponPreference = deagle
+End
+
+Template TournyT
+	WeaponPreference = ak47
+	WeaponPreference = m4a1
+	WeaponPreference = deagle
+End
+
+Template Tourny
+	WeaponPreference = m4a1
+	WeaponPreference = ak47
+	WeaponPreference = deagle
+End
+
+Template Custom
+	WeaponPreference = awp
+	WeaponPreference = aug
+	WeaponPreference = sg552
+	WeaponPreference = m4a1
+	WeaponPreference = ak47
+	WeaponPreference = mp5
+	WeaponPreference = deagle
+End
+
+Template CustomT
+	WeaponPreference = awp
+	WeaponPreference = sg552
+	WeaponPreference = aug
+	WeaponPreference = ak47
+	WeaponPreference = m4a1
+	WeaponPreference = mp5
+	WeaponPreference = deagle
+End
+
+Template AutoSniper
+	WeaponPreference = g3sg1
+	WeaponPreference = sg550
+	WeaponPreference = scout
+	WeaponPreference = galil
+	WeaponPreference = famas
+	WeaponPreference = mp5
+	WeaponPreference = p228
+End
+
+Template AutoSniperT
+	WeaponPreference = sg550
+	WeaponPreference = g3sg1
+	WeaponPreference = scout
+	WeaponPreference = famas
+	WeaponPreference = galil
+	WeaponPreference = mp5
+	WeaponPreference = p228
+End
+
+Template Rifle
+	WeaponPreference = m4a1
+	WeaponPreference = ak47
+	WeaponPreference = famas
+	WeaponPreference = galil
+	WeaponPreference = mp5
+End
+
+Template RifleT
+	WeaponPreference = ak47
+	WeaponPreference = m4a1
+	WeaponPreference = galil
+	WeaponPreference = famas
+	WeaponPreference = mp5
+End
+
+Template Punch
+	WeaponPreference = aug
+	WeaponPreference = sg552
+	WeaponPreference = mp5
+	WeaponPreference = deagle
+End
+
+Template PunchT
+	WeaponPreference = aug
+	WeaponPreference = sg552
+	WeaponPreference = mp5
+	WeaponPreference = deagle
+End
+
+Template Sniper
+	WeaponPreference = awp
+	WeaponPreference = scout
+	WeaponPreference = mp5
+	WeaponPreference = deagle
+End
+
+Template Power
+	WeaponPreference = m249
+	WeaponPreference = xm1014
+	WeaponPreference = m3
+	WeaponPreference = famas
+	WeaponPreference = galil
+	WeaponPreference = deagle
+End
+
+Template Shotgun
+	WeaponPreference = xm1014
+	WeaponPreference = m3
+	WeaponPreference = elite
+	WeaponPreference = fiveseven
+End
+
+Template Shield
+//	WeaponPreference = shield
+	WeaponPreference = m4a1			// in case shield is disallowed
+	WeaponPreference = ak47
+	WeaponPreference = famas
+	WeaponPreference = galil
+	WeaponPreference = mp5
+End
+
+Template Spray
+	WeaponPreference = p90
+	WeaponPreference = tmp
+	WeaponPreference = mac10
+	WeaponPreference = elite
+	WeaponPreference = fiveseven
+End
+
+// skill templates
+Template Awppro
+	Skill = 100
+	Aggression = 75
+	ReactionTime = 0.1
+	Cost = 4
+	Difficulty = EXPERT+HARD
+	VoicePitch = 90
+	Teamwork = 100
+End
+
+Template EliteScared
+	Skill = 100
+	Aggression = 60
+//	ReactionTime = 0.2
+	ReactionTime = 0.25
+	Cost = 4
+	Difficulty = EXPERT+HARD+NORMAL
+	VoicePitch = 90
+	Teamwork = 100
+End
+
+Template Elite
+	Skill = 100
+	Aggression = 100
+	ReactionTime = 0.2
+	Cost = 4
+	Difficulty = EXPERT+HARD
+	VoicePitch = 85
+	Teamwork = 100
+End
+
+Template ExpertScared
+	Skill = 95
+	Aggression = 50
+//	ReactionTime = 0.2
+	ReactionTime = 0.25
+	Cost = 4
+	Difficulty = EXPERT+HARD+NORMAL
+	VoicePitch = 88
+	Teamwork = 100
+End
+
+Template Expert
+	Skill = 90
+	Aggression = 90
+//	ReactionTime = 0.2
+	ReactionTime = 0.25
+	Cost = 4
+	Difficulty = EXPERT+HARD+NORMAL
+	VoicePitch = 88
+	Teamwork = 100
+End
+
+Template VeryHard
+	Skill = 80
+	Aggression = 80
+	ReactionTime = 0.25
+	Cost = 3
+	Difficulty = HARD+NORMAL
+	VoicePitch = 92
+	Teamwork = 100
+End
+
+Template Hard
+	Skill = 75
+	Aggression = 75
+	ReactionTime = 0.25
+	Cost = 3
+	Difficulty = HARD+NORMAL
+	VoicePitch = 94
+	Teamwork = 100
+End
+
+Template Tough
+	Skill = 60
+	Aggression = 60
+	ReactionTime = 0.3
+//	AttackDelay = 0.35
+	Cost = 2
+	Difficulty = NORMAL
+	VoicePitch = 96
+	Teamwork = 100
+End
+
+Template Normal
+	Skill = 50
+	Aggression = 50
+	ReactionTime = 0.4
+//	AttackDelay = 0.7
+	Cost = 2
+	Difficulty = NORMAL
+End
+
+Template Fair
+	Skill = 25
+	Aggression = 30
+	ReactionTime = 0.4
+//	AttackDelay = 1.0
+	Cost = 1
+	Difficulty = EASY+NORMAL
+	VoicePitch = 105
+	Teamwork = 100
+End
+
+Template Easy
+	Skill = 0
+	Aggression = 20
+	ReactionTime = 0.5
+//	AttackDelay = 1.5
+	Cost = 1
+	Difficulty = EASY
+	VoicePitch = 110
+	Teamwork = 100
+End
+
+//----------------------------------------------------------------------------
+//
+// These are the individual bot profiles, which inherit first from 
+// Default and then the specified Template(s), in order
+//
+
+Awppro+Trueawpsniper "ryu"
+	Skin = 1
+	VoicePitch = 84
+End
+
+Awppro+Trueawpsniper "dDeath of the ART"
+	Skin = 1
+	VoicePitch = 84
+End
+
+Awppro+Trueawpsniper "X the Driplet"
+	Skin = 2
+	VoicePitch = 85
+End
+
+Awppro+Trueawpsniper "Phakkle of War"
+	Skin = 3
+	VoicePitch = 80
+End
+
+Elite+Rifle "Azimuth"
+	Skin = 1
+	VoicePitch = 95
+End
+
+Elite+CustomT "RamboGunther1337"
+	Skin = 4
+	VoicePitch = 80
+End
+
+Elite+Custom "DaZZerMAXX"
+	Skin = 3
+	VoicePitch = 90
+End
+
+Elite+AutoSniper "ConTour"
+	Skin = 2
+	VoicePitch = 78
+End
+
+EliteScared+Tourny "wolf-fang"
+	Skin = 1
+	VoicePitch = 60
+End
+
+Elite+TournyT "hula"
+	Skin = 2
+	VoicePitch = 85
+End
+
+Elite+Spray "itchetrigr"
+	Skin = 3
+	VoicePitch = 105
+End
+
+Elite+Shotgun "Onslaught"
+	Skin = 4
+	VoicePitch = 84
+End
+
+EliteScared+Punch "JuZak"
+	Skin = 1
+	VoicePitch = 110
+End
+
+Elite+Power "Gen.TsoVicious"
+	Skin = 2
+	VoicePitch = 80
+End
+
+Elite+PunchT "-FaK- TuB"
+	Skin = 4
+	VoicePitch = 90
+End
+
+Elite+Rifle "FrunkenmeisteR"
+	Skin = 2
+	VoicePitch = 98
+End
+
+Elite+RifleT ".T3ch_N0ne."
+	Skin = 1
+	VoicePitch = 96
+End
+
+Elite+Sniper "Zed-Len"
+	Skin = 3
+	VoicePitch = 105
+End
+
+Elite+RifleT "xb9manina"
+	Skin = 1
+	VoicePitch = 84
+End
+
+Elite+PunchT "Furious_DC"
+	Skin = 4
+	VoicePitch = 86
+End
+
+
+//----------------------------------------
+
+Expert+RifleT "MaNgLeR"
+	Skin = 4
+	VoicePitch = 85
+End
+
+Expert+CustomT "Forgon Sight"
+	Skin = 4
+	VoicePitch = 80
+End
+
+Expert+Trueawpsniper "RAZOR"
+	Skin = 3
+	VoicePitch = 95
+End
+
+Expert+TournyT "KiLLconey"
+	Skin = 1
+	VoicePitch = 90
+End
+
+Expert+Tourny "OveRSlaP"
+	Skin = 2
+	VoicePitch = 98
+End
+
+Expert+AutoSniperT "FaLLouT"
+	Skin = 1
+	VoicePitch = 84
+End
+
+ExpertScared+Tourny "dna SWAT"
+	Skin = 2
+	VoicePitch = 110
+End
+
+ExpertScared+Custom "bre@kd0wn"
+	Skin = 1
+	VoicePitch = 85
+End
+
+Expert+Rifle "neonfaktory"
+	Skin = 2
+	VoicePitch = 100
+End
+
+Expert+Punch "Grunkzzz"
+	Skin = 4
+	VoicePitch = 95
+End
+
+Expert+Sniper "Shadow Master"
+	SKin = 1
+	VoicePitch = 115
+End
+
+Expert+Shotgun "southernskies"
+	Skin = 4
+	VoicePitch = 87
+End
+
+Expert+Rifle "-=[Desert-Eagle]=-"
+	Skin = 1
+	VoicePitch = 91
+End
+
+Expert+Rifle "aLiNiMNoN"
+	Skin = 2
+	VoicePitch = 101
+End
+
+EliteScared+Custom "Lamer"
+	Skin = 3
+	VoicePitch = 112
+End
+
+Expert+PunchT "bLaCkSuRgEoN"
+	Skin = 3
+	VoicePitch = 99
+End
+
+Expert+Rifle "-=Zaphod=-"
+	Skin = 4
+	VoicePitch = 100
+End
+
+//----------------------------------------
+
+VeryHard+Power "deathviper168"
+	Skin = 1
+	VoicePitch = 110
+End
+
+VeryHard+Sniper "Quci-kSho-t"
+	Skin = 3
+	VoicePitch = 93
+End
+
+VeryHard+AutoSniper "DaMafiA"
+	Skin = 2
+	VoicePitch = 98
+End
+
+VeryHard+Rifle "TakeOFF"
+	Skin = 2
+	VoicePitch = 100
+End
+
+VeryHard+RifleT "aK-MAsta"
+	Skin = 4
+	VoicePitch = 86
+End
+
+
+//----------------------------------------
+
+Hard+Rifle "Datastream-Cowboy"
+	Skin = 1
+	VoicePitch = 95
+End
+
+Hard+RifleT "Noe"
+	Skin = 2
+	VoicePitch = 90
+End
+
+Hard+Custom "NeSSt"
+	Skin = 2
+	VoicePitch = 110
+End
+
+Hard+AutoSniper "TheSiS"
+	Skin = 2
+	VoicePitch = 95
+End
+
+Hard+CustomT "Temepera"
+	Skin = 4
+	VoicePitch = 81
+End
+
+Hard+Spray "Praynspray"
+	Skin = 1
+	VoicePitch = 102
+End
+
+Hard+Shotgun "inyafAcE"
+	Skin = 2
+	VoicePitch = 98
+End
+
+Hard+RifleT "infame"
+	Skin = 4
+	VoicePitch = 96
+End
+
+Hard+Punch "sperm@zoid"
+	Skin = 1
+	VoicePitch = 103
+End
+
+Hard+PunchT "Rangersmith"
+	Skin = 2
+	VoicePitch = 105
+End
+
+Hard+Rifle "Mark-Z-man"
+	Skin = 4
+	VoicePitch = 97
+End
+
+Hard+Rifle "HarDEbAlLa"
+	Skin = 1
+	VoicePitch = 84
+End
+
+Hard+PunchT "S0ren-Jensen"
+	Skin = 2
+	VoicePitch = 90
+End
+
+Hard+Rifle "lEEt-poSeR"
+	Skin = 3
+	VoicePitch = 98
+End
+
+Hard+Sniper "Nothi3naTa11"
+	Skin = 4
+	VoicePitch = 110
+End
+
+Hard+Spray "LastMAnStanDINg"
+	Skin = 1
+	VoicePitch = 103
+End
+
+Hard+Rifle "ThunderRabbiT"
+	Skin = 2
+	VoicePitch = 110
+End
+
+//----------------------------------------
+
+Tough+Sniper "NEedzNoONE"
+	Skin = 3
+	VoicePitch = 120
+End
+
+Tough+AutoSniper "Guide"
+	Skin = 2
+	VoicePitch = 121
+End
+
+Tough+Rifle "Manilla Folder"
+	Skin = 1
+	VoicePitch = 100
+End
+
+Tough+Rifle "Wah-Wah Effect"
+	Skin = 2
+	VoicePitch = 104
+End
+
+Tough+RifleT "Pobler"
+	Skin = 4
+	VoicePitch = 98
+End
+
+Tough+Spray "el-ass"
+	Skin = 1
+	VoicePitch = 100
+End
+
+Tough+Rifle "L337Bunny"
+	Skin = 2
+	VoicePitch = 102
+End
+
+Tough+Shotgun "FOowitAshotGun"
+	Skin = 4
+	VoicePitch = 95
+End
+
+Tough+Rifle ".sLipsTaR.*"
+	Skin = 1
+	VoicePitch = 95
+End
+
+Tough+RifleT "ShadoMagi"
+	Skin = 2
+	VoicePitch = 110
+End
+
+Tough+Rifle "z@@L"
+	Skin = 4
+	VoicePitch = 112
+End
+
+Tough+Shotgun "pwnisnotaword"
+	Skin = 1
+	VoicePitch = 90
+End
+
+Tough+Rifle "weakling"
+	Skin = 2
+	VoicePitch = 115
+End
+
+Tough+RifleT "Mdoziaa"
+	Skin = 4
+	VoicePitch = 107
+End
+
+Tough+Rifle "Tongue of the Fatman"
+	Skin = 2
+	VoicePitch = 102
+End
+
+Tough "X-Tender"
+	Skin = 1
+	VoicePitch = 98
+End
+
+Tough+Rifle "CorTeX"
+	Skin = 2
+	VoicePitch = 100
+End
+
+Tough+RifleT "MeaN"
+	Skin = 4
+	VoicePitch = 95
+End
+
+Tough+Rifle "Steeefan"
+	Skin = 1
+	VoicePitch = 86
+End
+
+Tough+RifleT "Warbeast"
+	Skin = 2
+	VoicePitch = 100
+End
+
+Tough+Rifle "iPooN!"
+	Skin = 4
+	VoicePitch = 95
+End
+
+//----------------------------------------
+
+Normal+Rifle "Crouching Camper Hidden Noob"
+	Skin = 1
+	VoicePitch = 105
+End
+
+Normal+PunchT "Love Blister"
+	Skin = 2
+	VoicePitch = 90
+End
+
+Normal+Custom "WormEateR"
+	Skin = 1
+	VoicePitch = 105
+End
+
+Normal+CustomT "El Terrible"
+	Skin = 2
+	VoicePitch = 90
+End
+
+Normal+Rifle "Serial killer"
+	Skin = 3
+	VoicePitch = 100
+End
+
+Normal+AutoSniper "Selcuk87"
+	Skin = 4
+	VoicePitch = 107
+End
+
+Normal+Shield "Shade"
+	Skin = 1
+	VoicePitch = 104
+End
+
+Normal+RifleT "WerX"
+	Skin = 2
+	VoicePitch = 110
+End
+
+Normal+Rifle "Sidewinder(29)"
+	Skin = 3
+	VoicePitch = 95
+End
+
+Normal+CustomT "Outbacks"
+	Skin = 4
+	VoicePitch = 112
+End
+
+Normal+Rifle "Tennistar"
+	Skin = 1
+	VoicePitch = 111
+End
+
+Normal+Sniper "Tetra DemoN"
+	Skin = 3
+	VoicePitch = 115
+End
+
+Normal+Rifle "Tony Vercity"
+	Skin = 4
+	VoicePitch = 112
+End
+
+Normal+Rifle "WarFare - fire of the land"
+	Skin = 4
+	VoicePitch = 96
+End
+
+Normal+Custom "Bruder_D"
+	Skin = 1
+	VoicePitch = 98
+End
+
+Normal+Rifle "SteeeFan"
+	Skin = 2
+	VoicePitch = 110
+End
+
+Normal+Rifle "Meister Roehrich"
+	Skin = 4
+	VoicePitch = 95
+End
+
+Normal+RifleT "SoMa"
+	Skin = 3
+	VoicePitch = 100
+End
+
+Normal+Rifle "FoSSmy teeth now you"
+	Skin = 1
+	VoicePitch = 99
+End
+
+Normal+Rifle "FUzIOn"
+	Skin = 4
+	VoicePitch = 98
+End
+
+Normal+Rifle "IcEWolF"
+	Skin = 1
+	VoicePitch = 105
+End
+
+Normal+Rifle "GurU1859"
+	Skin = 2
+	VoicePitch = 115
+End
+
+Normal+Rifle "KaNe normal orly?"
+	Skin = 3
+	VoicePitch = 110
+End
+
+Normal+Custom "RUMBLE"
+	Skin = 4
+	VoicePitch = 92
+End
+
+//----------------------------------------
+
+Fair+Spray "y4eelt"
+	Skin = 3
+	VoicePitch = 110
+End
+
+Fair+Custom "Metro"
+	Skin = 1
+	VoicePitch = 100
+End
+
+Fair+Rifle "harmonies"
+	Skin = 2
+	VoicePitch = 99
+End
+
+Fair+Spray "omydarling"
+	Skin = 2
+	VoicePitch = 120
+End
+
+Fair+Power "veteran"
+	Skin = 2
+	VoicePitch = 111
+End
+
+Fair+Sniper "slppers"
+	Skin = 1
+	VoicePitch = 98
+End
+
+Fair+Sniper "Curtmigle"
+	Skin = 4
+	VoicePitch = 112
+End
+
+Fair+Custom "Halfmylife"
+	Skin = 4
+	VoicePitch = 90
+End
+
+Fair+RifleT "Benadic"
+	Skin = 1
+	VoicePitch = 120
+End
+
+Fair+Shotgun "Med"
+	Skin = 3
+	VoicePitch = 118
+End
+
+Fair+Rifle "FIE"
+	Skin = 3
+	VoicePitch = 116
+End
+
+Fair+Custom "OEIe"
+	Skin = 2
+	VoicePitch = 114
+End
+
+Fair+PunchT "Martin"
+	Skin = 2
+	VoicePitch = 110
+End
+
+Fair+Punch "Scape"
+	Skin = 1
+	VoicePitch = 98
+
+End
+Fair+Rifle "Spybot"
+	Skin = 4
+	VoicePitch = 92
+End
+
+Fair+Power "lessar"
+	Skin = 4
+	VoicePitch = 113
+End
+
+Fair+Spray "Ender"
+	Skin = 1
+	VoicePitch = 114
+End
+
+Fair+Punch "Quen"
+	Skin = 3
+	VoicePitch = 115
+End
+
+Fair+Power "YMe!!"
+	Skin = 1
+	VoicePitch = 100
+End
+
+Fair+Rifle "Zeus'Beard"
+	Skin = 1
+	VoicePitch = 102
+End
+
+Fair+Rifle "HeadShot==>"
+	Skin = 2
+	VoicePitch = 98
+End
+
+Fair+Rifle "Punce"
+	Skin = 2
+	VoicePitch = 96
+End
+
+Fair+Power "MAIMZap"
+	Skin = 1
+	VoicePitch = 94
+End
+
+//----------------------------------------
+Easy+Rifle "@what.com"
+	Skin = 1
+	VoicePitch = 100
+End
+
+Easy+Spray "Death"
+	Skin = 3
+	VoicePitch = 110
+End
+
+Easy+Spray "killer"
+	Skin = 3
+	VoicePitch = 120
+End
+
+Easy+Spray "Opange"
+	Skin = 1
+	VoicePitch = 99
+End
+
+Easy+Rifle "concelal"
+	Skin = 2
+	VoicePitch = 120
+End
+
+Easy+PunchT "outcourge"
+	Skin = 1
+	VoicePitch = 125
+End
+
+Easy+Punch "import"
+	Skin = 2
+	VoicePitch = 110
+End
+
+Easy+Rifle "crag"
+	Skin = 1
+	VoicePitch = 100
+End
+
+Easy+Rifle "yap"
+	Skin = 2
+	VoicePitch = 112
+End
+
+Easy+Rifle "killplz"
+	Skin = 4
+	VoicePitch = 121
+End
+
+Easy+Spray "nofood4you"
+	Skin = 4
+	VoicePitch = 99
+End
+
+Easy+Spray "useeme"
+	Skin = 1
+	VoicePitch = 119
+End
+
+Easy+Sniper "chaha"
+	Skin = 3
+	VoicePitch = 118
+End
+
+Easy+Rifle "Petata"
+	Skin = 3
+	VoicePitch = 117
+End
+
+Easy+Power "Yify"
+	Skin = 1
+	VoicePitch = 116
+End
+
+Easy+Rifle "Opire"
+	Skin = 1
+	VoicePitch = 115
+End
+
+Easy+Rifle "Curage"
+	Skin = 2
+	VoicePitch = 114
+End
+
+Easy+Rifle "simster"
+	Skin = 2
+	VoicePitch = 112
+End
+
+Easy+Spray "easymeat"
+	Skin = 1
+	VoicePitch = 111
+End
+
+Easy+Spray "Inofo"
+	Skin = 4
+	VoicePitch = 110
+End
+
+Easy+Sniper "Marvin"
+	Skin = 1
+	VoicePitch = 109
+End
+
+Easy+Rifle "knifer"
+	Skin = 4
+	VoicePitch = 108
+End
+
+Easy+Power "Life 3"
+	Skin = 3
+	VoicePitch = 122
+End
+
+Easy+Power "Dinner"
+	Skin = 2
+	VoicePitch = 120
+End
+
+Easy+Rifle "Pimp"
+	Skin = 1
+	VoicePitch = 125
+End
+
+Easy+Power "Aqua"
+	Skin = 1
+	VoicePitch = 92
+End
+
+Easy+Punch "VCA"
+	Skin = 1
+	VoicePitch = 100
+End
+
+Easy+Rifle "Dire"
+	Skin = 1
+	VoicePitch = 102
+End
+
+Easy+Rifle "GCFfile"
+	Skin = 1
+	VoicePitch = 104
+End
+
+Easy+Rifle "Tool"
+	Skin = 1
+	VoicePitch = 108
+End
+
+Easy+Rifle "NIght"
+	Skin = 1
+	VoicePitch = 95
+End
+
+Easy+Power "Data"
+	Skin = 1
+	VoicePitch = 100
+End
+
+Easy+Power "Pest"
+	Skin = 1
+	VoicePitch = 120
+End
+
+Easy+Power "Leadfoot"
+	Skin = 1
+	VoicePitch = 112
+End
+
+Easy+PunchT "Nail"
+	Skin = 1
+	VoicePitch = 99
+End
+
+Easy+Punch "Yuri"
+	Skin = 1
+	VoicePitch = 110
+End
